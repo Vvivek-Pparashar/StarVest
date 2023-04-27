@@ -1,0 +1,18 @@
+.m-ln {
+  margin-bottom: 30px;
+  width: 100vw;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.m-ln-c {
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .m-ln {
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+}

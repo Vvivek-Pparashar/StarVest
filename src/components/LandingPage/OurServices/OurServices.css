@@ -1,0 +1,75 @@
+.m-os {
+  width: 100vw;
+  height: 100%;
+  background-color: var(--s-pm-1);
+  display: flex;
+  flex-direction: column;
+  /* padding: 0 0 50px ; */
+}
+
+.m-os-c {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px 50px;
+  gap: 50px;
+}
+
+.m-card {
+  height: 36vw;
+  border-radius: 20px;
+  /* cursor: pointer; */
+  box-shadow: 13px 13px 24px -7px rgba(0, 0, 0, 1);
+  /* margin-bottom: 50px; */
+}
+
+.m-card-comp {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: baseline;
+  background-size: cover;
+  padding: 30px;
+  border-radius: inherit;
+  text-decoration: none;
+}
+
+.m-card-h5 {
+  color: white;
+  /* color: aqua; */
+  font-size: var(--head-2);
+}
+
+.m-card-p{
+  color: white;
+  font-size: 18px;
+  /* font-weight: 200; */
+}
+
+.m-card-a{
+  color: white;
+  /* text-decoration: do */
+  font-size: var(--xs-1);
+  font-weight: 200;
+}
+
+@media screen and (max-width: 750px) {
+  .m-os-c {
+    flex-direction: column;
+    padding: 0;
+    gap: 0px;
+  }
+
+  .m-card {
+    height: 105vw;
+    width: 100%;
+    border-radius: 0px;
+    margin-bottom: 0;
+    box-shadow:none;
+  }
+}

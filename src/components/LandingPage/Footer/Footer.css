@@ -1,0 +1,101 @@
+.mf {
+  width: 100vw;
+  height: 100%;
+  background-color: #0b2230;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 80px 10px;
+}
+
+.m-f {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.m-f-l {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.m-f-l-p {
+  color: white;
+  font-size: var(--sm-1);
+}
+
+.m-f-l img {
+  width: 20vw;
+  margin-bottom: 40px;
+}
+
+.m-f-l span {
+  color: white;
+  font-weight: 400;
+}
+.m-f-r-f-s,
+.m-f-r-s-s {
+  margin-top: 30px;
+}
+
+.m-f-r {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 130px;
+}
+
+.m-f-r a {
+  text-decoration: none;
+  color: white;
+}
+
+.m-f-r span {
+  font-size: 25px;
+  color: white;
+}
+
+.mf hr {
+  margin-bottom: 5px;
+}
+
+.mf .p {
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 750px) {
+  .mf {
+    padding: 50px 30px 10px;
+  }
+
+  .m-f {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .m-f-l {
+    flex-direction: column;
+  }
+
+  .m-f-l img {
+    width: 40vw;
+  }
+
+  .m-f-r-f-s,
+  .m-f-r-s-s {
+    margin: 30px 0;
+  }
+
+  .m-f-r {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .mf hr {
+    margin-bottom: 10px;
+  }
+}

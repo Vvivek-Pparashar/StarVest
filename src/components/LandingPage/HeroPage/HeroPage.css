@@ -1,0 +1,116 @@
+.m {
+  width: 100vw;
+  height: 45vw;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  /* padding: 100px 80px 50px; */
+  padding: 3rem 4rem 0;
+  /* min-height: 100vh; */
+}
+
+.diagonal,
+.diagonal::after {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  clip-path: polygon(0 0%, 100% 0, 100% 30%, 0 100%);
+  z-index: 2;
+}
+
+.diagonal::after {
+  content: "";
+  background-color: var(--s-pm-1);
+  opacity: 0.8;
+}
+
+.diagonal {
+  background-image: url("../../../../public/assests/landingPage/background.jpg");
+  background-size: auto 100%;
+}
+
+.m-l {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+  z-index: 3;
+  margin-top: -40px;
+  /* min-height: 100%; */
+}
+
+.m-l-h1 {
+  font-size: var(--xl-1);
+  color: white;
+  font-weight: 500;
+}
+
+.m-l-p {
+  color: white;
+  font-size: var(--sm-1);
+  font-weight: 200;
+  margin: 20px 0 30px;
+}
+
+.m-l button {
+  width: 200px;
+  background-color: var(--s-pm-2);
+  color: var(--s-accent-1);
+  /* font-size: 1.2rem; */
+  border: none;
+  outline: none;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.m-r {
+  height: 100%;
+  flex: 2;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100%; */
+}
+
+.m-r img {
+  width: 35vw;
+}
+
+@media screen and (max-width: 550px) {
+  .m {
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem 0rem 0;
+    height: 185vw;
+  }
+
+  .diagonal,
+  .diagonal::after {
+    clip-path: polygon(0px 0px, 100vw 0px, 100% 100%, 0px 100%);
+  }
+
+  .m-l {
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .m-l button {
+    width: 150px;
+    padding: 2.5vw 5vw;
+    border-radius: 10px;
+    font-size: 3vw;
+  }
+
+  .m-r img {
+    width: 80vw;
+  }
+}

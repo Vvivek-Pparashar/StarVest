@@ -1,0 +1,130 @@
+.m-a {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  padding: 30px 80px 50px;
+  background-color: white;
+}
+
+.m-a-c {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+}
+
+.m-a-l,
+.m-a-r {
+  flex: 2;
+  width: 100%;
+  display: flex;
+  padding-left: 50px;
+  justify-content: flex-start;
+}
+
+.m-a-l-img-c {
+  width: 32vw;
+  display: flex;
+  height: 41.5vw;
+  margin-bottom: 0px;
+  border-radius: 30px;
+  background: #142c64;
+  justify-content: flex-end;
+  border-top-right-radius: 0;
+}
+
+.m-a-l-img-c img {
+  width: 29vw;
+  height: 39vw;
+  border-left: 3px solid white;
+  border-bottom-left-radius: 1.5vw;
+  border-bottom: 3px solid white;
+}
+
+.m-a-r {
+  flex-direction: column;
+}
+
+.m-a-r-h5{
+  color: var(--s-oth);
+  /* font-size: clamp(32px, 3vw, 55px); */
+  font-size: var(--head-3);
+  /* font-size: 30px; */
+}
+
+.b {
+  cursor: pointer;
+  color: #142c64;
+  position: relative;
+}
+
+.b::after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 90px;
+  position: absolute;
+  background-color: #142c64;
+}
+
+@media screen and (max-width: 750px) {
+  .m-a {
+    padding: 30px 30px 50px;
+  }
+
+  .m-a-c {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .m-a-l,
+  .m-a-r {
+    padding-left: 0px;
+  }
+
+  .m-a-l-img-c {
+    width: 100%;
+    height: 114vw;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+
+  .m-a-l-img-c img {
+    width: 75vw;
+    height: 105vw;
+    border-bottom-left-radius: 3vw;
+    border-bottom-left-radius: 1.5vw;
+  }
+
+  .m-a-r {
+    flex-direction: column;
+    padding-left: 5px;
+  }
+
+  .h5 {
+    color: var(--s-oth);
+  }
+
+  .b::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 90px;
+    height: 2px;
+    background-color: #142c64;
+  }
+
+  .m-a-l {
+    flex: 1;
+  }
+  .m-a-r {
+    flex: 2;
+  }
+}

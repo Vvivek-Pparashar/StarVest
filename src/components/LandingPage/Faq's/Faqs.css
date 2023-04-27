@@ -1,0 +1,41 @@
+.m-fa {
+  width: 100%;
+  height: 100%;
+  background-color: var(--s-accent-1);
+  margin-bottom: 70px;
+}
+
+.m-fa-c {
+  margin: 0 auto;
+  width: 98%;
+  height: 90%;
+  background: #ececec;
+  padding: 90px 90px 30px;
+  border-radius: 15px;
+}
+
+.m-fa-c-h2{
+  font-size: var(--head-1);
+  color: var(--s-pm-1);
+}
+
+.m-fa-qa {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 750px) {
+  .m-fa {
+    margin-bottom: 0px;
+  }
+  .m-fa-c {
+    width: 100%;
+    padding: 50px 30px 30px;
+    border-radius: 0px;
+  }
+
+  .m-fa-qa {
+    display: flex;
+    flex-direction: column;
+  }
+}
